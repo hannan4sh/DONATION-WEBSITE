@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ASSIGNMENT.js"></script>
+    <link href="ASSIGNMENT.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    
+    <header>
+        <a href='ASSIGNMENT.html' class="hover-text">HOME</a>
+        <img src="iium_logo.png" alt="logo" width="250" height="130"/>
+        <a href='#foot' class="hover-text">CONTACT US</a>
+    </header>
+    <nav >
+        <div class="text-container">
+            <h1 style="font-size: 64px;">RM1 CAMPAIGN.</h1>
+            <h2 style="font-size: 20px; font-weight: lighter;">"Let your contributions be perpetual for the pleasure of Allah SWT"</h2>
+            <h3 style="font-weight: lighter; ">مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍۢ مِّا۟ئَةُ حَبَّةٍۢ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيم١</h3><br>
+            <button type="button" onclick="scrollToSection()" class="button">DONATE NOW!</button><br><br><br><br>
+            <img src="donation.jpg" width="100%" height="500" >
+        </div>
+       
+    </nav>
+    <br><br>
+    <article style="text-align: center; ">
+        <h1>PARTICIPATION IN RM1 CAMPAIGN — MONTHLY SALARY DEDUCTION</h1><br>
+        <form id="donationForm" onsubmit="submitForm(event)">
+            <div class="damn" style="display: flex; justify-content: center;">
+                <div class="form-container">
+                    <label for="name">Name: <span aria-label="required">*</span></label>
+                    <input type="text" id="name" oninput="validateForm()">
+                
+                    <label for="staff">Staff No: <span aria-label="required">*</span></label>
+                    <input type="text" id="staff" oninput="validateForm()">
+                
+                    <label for="contact">Contact No: <span aria-label="required">*</span></label>
+                    <input type="text" id="contact" oninput="validateForm()">
+                </div>
+                <div class="form-container">
+                    <label for="email">Email: <span aria-label="required">*</span></label>
+                    <input type="text" id="email" oninput="validateForm()">
+        
+                    <label for="kuliyyah">Kuliyyah: <span aria-label="required">*</span></label>
+                    <input type="text" id="kuliyyah" oninput="validateForm()">
+    
+                    <label for="amount">Amount to be deducted: <span aria-label="required">*</span></label>
+                    <input type="text" id="amount" oninput="validateForm()">
+                </div>
+            </div>
+            <input type="submit" id="loginButton" value="submit" disabled>
+        </form>
+    </article>
+        
+
+    <br><br><br>
+
+    <footer id="foot"style="text-align: center; ">
+        <p>FOR MORE INFORMATION DO CONTACT: </p>
+        <p>IIUM Endowment Fund
+            Level 3, Rectory Building
+            International Islamic University Malaysia</p>
+        <p>contact no: 03-6283910</p>
+
+    </footer>
+   
+
+</body>
+</html>
